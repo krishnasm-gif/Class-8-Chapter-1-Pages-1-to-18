@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Physics - Complete Chapter 1 & 2 Portal with Telugu Pronunciation under Terms</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #059669;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --border: #cbd5e1;
+            --accent: #d97706;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Full Screen Login Overlay */
+        #visitor-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .login-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .login-card h2 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .login-card p {
+            color: #64748b;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary);
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Main Content Container (Hidden until login) */
+        #main-content {
+            display: none;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-bottom: 80px;
+        }
+
+        /* Top Nav */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 12px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .top-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 6px;
+            background: #eff6ff;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .top-nav a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Session Header Bar */
+        .session-bar {
+            background: #ecfdf5;
+            border: 1px solid #10b981;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-top: 70px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #065f46;
+        }
+
+        /* Section Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 35px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-top: 5px solid var(--primary);
+        }
+
+        .card.friction-card {
+            border-top-color: var(--secondary);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h2 {
+            color: #1e293b;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+            color: #475569;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* Telugu Long Descriptions */
+        .telugu-desc {
+            background: #f0fdf4;
+            border-left: 4px solid var(--secondary);
+            padding: 15px;
+            margin: 12px 0 20px 0;
+            border-radius: 0 8px 8px 0;
+            color: #166534;
+            font-size: 1rem;
+        }
+
+        .telugu-desc strong {
+            color: #14532d;
+        }
+
+        /* Pronunciation styling under left side term */
+        .term-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .eng-term {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .pronunciation-telugu {
+            font-size: 0.85rem;
+            color: #d97706;
+            margin-top: 3px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95rem;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 14px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* Q&A Boxes */
+        .qa-box {
+            background: #fffbeb;
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .qa-box p.question {
+            font-weight: bold;
+            color: #b45309;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        /* Scroll to Top */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 18px;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 999;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #scrollTopBtn:hover {
+            background: var(--primary-dark);
+            transform: scale(1.1);
+        }
+
+        @media(max-width: 768px) {
+            .card {
+                padding: 20px;
+            }
+            .login-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Visitor Login Overlay (Mandatory First Step) -->
+    <div id="visitor-overlay">
+        <div class="login-card">
+            <h2>Welcome Student!</h2>
+            <p>Please enter your name and roll number to log your session and unlock the learning portal.</p>
+            <div class="form-group">
+                <label for="visitorName">Your Full Name:</label>
+                <input type="text" id="visitorName" placeholder="e.g., Bala Swamy">
+            </div>
+            <div class="form-group">
+                <label for="visitorRoll">Roll Number / ID:</label>
+                <input type="text" id="visitorRoll" placeholder="e.g., 8054">
+            </div>
+            <button class="btn" onclick="submitVisitorLogin()">Enter Portal & Start Timer</button>
+        </div>
+    </div>
+
+    <!-- Top Navigation Menu -->
+    <nav class="top-nav">
+        <a href="#ch1-main">Ch 1: Force</a>
+        <a href="#ch1-glossary">Ch 1 Glossary (80+)</a>
+        <a href="#ch1-all-exercises">Ch 1 All Exercises</a>
+        <a href="#ch2-main">Ch 2: Friction</a>
+        <a href="#ch2-glossary">Ch 2 Glossary (80+)</a>
+        <a href="#ch2-all-exercises">Ch 2 All Exercises</a>
+    </nav>
+
+    <!-- Main Portal Content -->
+    <div id="main-content">
+
+        <!-- Active Session Info Bar -->
+        <div class="session-bar">
+            <span>Student: <strong id="showName"></strong> (Roll: <strong id="showRoll"></strong>)</span>
+            <span>Session Time: <strong id="timerCounter">0</strong> seconds</span>
+        </div>
+
+        <!-- ================= CHAPTER 1: FORCE ================= -->
+        <div id="ch1-main" class="card">
+            <h1>Chapter 1: Force (బలం)</h1>
+            
+            <h2>1. Introduction to Force</h2>
+            <p>We observe many changes around us like changes in seasons, sun rise and sun set, and tides. In ancient days, people believed an invisible force was responsible. Later, force was defined through our physical efforts and actions like pushing and pulling.</p>
+            <div class="telugu-desc">
+                <strong>తెలుగు వివరణ:</strong> మన చుట్టూ జరిగే అనేక మార్పులకు (రుతువులు మారుట, సూర్యోదయం, సూర్యాస్తమయం, సముద్రపు అలలు మొదలైనవి) ఒక శక్తి లేదా బలమే కారణమని ప్రాచీన కాలంలో నమ్మేవారు. ఒక వస్తువుపై మనం చేసే నెట్టే లేదా లాగే ప్రయత్నాన్ని 'బలం' (Force) అంటారు.
+            </div>
+
+            <h2>2. Push and Pull Actions</h2>
+            <p>Actions like stretching a rubber band, pulling a rickshaw, rowing a boat, picking, squeezing, twisting, lowering, and lifting cause a change in the state or shape of an object.</p>
+            <div class="telugu-desc">
+                <strong>తెలుగు వివరణ:</strong> రబ్బరు బ్యాండ్ సాగదీయడం, రిక్షా లాగడం, పడవ నడపడం, వస్తువులను పైకి ఎత్తడం, పిండడం, మెలిపెట్టడం వంటి చర్యలన్నీ వస్తువుల స్థితిని లేదా ఆకారాన్ని మారుస్తాయి. వీటిని మనం 'నెట్టడం' (Push) లేదా 'లాగడం' (Pull) గా వర్గీకరించవచ్చు.
+            </div>
+
+            <h2>3. Types of Forces: Contact Forces & Field Forces</h2>
+            <p>Forces are classified into contact forces (direct physical contact like muscular force, friction, normal force, tension) and field forces / forces at a distance (no physical contact like magnetic force, electrostatic force, gravitational force).</p>
+            <div class="telugu-desc">
+                <strong>తెలుగు వివరణ:</strong> బలాలు ప్రధానంగా రెండు రకాలు: 1. స్పర్శా బలాలు (Contact Forces): వస్తువుల మధ్య ప్రత్యక్ష తాకిడి ఉన్నప్పుడు పనిచేసేవి (ఉదా: కండర బలం, ఘర్షణ, లంబ బలం, తన్యత). 2. క్షేత్ర బలాలు (Field Forces): ఎలాంటి భౌతిక స్పర్శ లేకుండా పనిచేసేవి (ఉదా: అయస్కాంత బలం, స్థిర విద్యుత్ బలం, గురుత్వాకర్షణ బలం).
+            </div>
+
+            <h2>4. Net Force and Free Body Diagram (FBD)</h2>
+            <p>When multiple forces act simultaneously on a body, their combined effect is represented by the net force ($F_{net}$). A Free Body Diagram (FBD) illustrates all forces acting on an object at a given instant.</p>
+            <div class="telugu-desc">
+                <strong>తెలుగు వివరణ:</strong> ఒక వస్తువుపై ఏకకాలంలో అనేక బలాలు పనిచేసినప్పుడు వాటి ఫలిత బలాన్ని 'నికర బలం' (Net Force) అంటారు. ఒక వస్తువుపై పనిచేసే అన్ని బలాలను సూచించే చిత్రాన్ని 'స్వేచ్ఛా వస్తువు చిత్రం' (Free Body Diagram - FBD) అంటారు.
+            </div>
+
+            <h2>5. Pressure</h2>
+            <p>The force acting perpendicularly on a unit area of a surface is called pressure. $\text{Pressure} = \frac{\text{Force}}{\text{Area}}$. Its SI unit is Newton/meter squared ($\text{N/m}^2$).</p>
+            <div class="telugu-desc">
+                <strong>తెలుగు వివరణ:</strong> ప్రమాణ వైశాల్యంపై లంబంగా పనిచేసే బలాన్ని 'పీడనం' (Pressure) అంటారు. పీడనం = బలం / వైశాల్యం. వైశాల్యం తక్కువగా ఉంటే పీడనం ఎక్కువగా ఉంటుంది.
+            </div>
+        </div>
+
+        <!-- ================= CHAPTER 1 GLOSSARY (80+ Terms with Pronunciation under Left Column) ================= -->
+        <div id="ch1-glossary" class="card">
+            <h1>Chapter 1: Comprehensive Glossary & Vocabulary (80+ Terms)</h1>
+            <p>Explore all key technical terms from Chapter 1 with English terms, Telugu pronunciation underneath, and bilingual definitions/examples.</p>
+            <table>
+                <tr>
+                    <th>Term (English)</th>
+                    <th>Definition & Bilingual Example</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">1. Force</span>
+                            <span class="pronunciation-telugu">ఫోర్స్ (బలం)</span>
+                        </div>
+                    </td>
+                    <td>A push or pull on an object. Example: Kicking a football. / ఉదా: ఫుట్‌‌బాల్‌ను కాళ్లతో తన్నడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">2. Push</span>
+                            <span class="pronunciation-telugu">పుష్ (నెట్టడం)</span>
+                        </div>
+                    </td>
+                    <td>Moving an object away. Example: Pushing a closed door. / ఉదా: తలుపును ముందుకు నెట్టడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">3. Pull</span>
+                            <span class="pronunciation-telugu">పుల్ (లాగడం)</span>
+                        </div>
+                    </td>
+                    <td>Moving an object towards oneself. Example: Opening a drawer. / ఉదా: డ్రాయర్‌ను వెనక్కి లాగడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">4. Contact Force</span>
+                            <span class="pronunciation-telugu">కాంటాక్ట్ ఫోర్స్ (స్పర్శా బలం)</span>
+                        </div>
+                    </td>
+                    <td>Force requiring physical touch. Example: Lifting a bag. / ఉదా: బ్యాగ్ ఎత్తడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">5. Field Force</span>
+                            <span class="pronunciation-telugu">ఫీల్డ్ ఫోర్స్ (క్షేత్ర బలం)</span>
+                        </div>
+                    </td>
+                    <td>Force acting without contact. Example: Magnetic pull. / ఉదా: అయస్కాంత ఆకర్షణ.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">6. Magnetic Force</span>
+                            <span class="pronunciation-telugu">మ్యాగ్నెటిక్ ఫోర్స్ (అయస్కాంత బలం)</span>
+                        </div>
+                    </td>
+                    <td>Force between magnets or iron. Example: Magnet attracting nails. / ఉదా: ఇనుప గుజరాన్ని ఆకర్షించడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">7. Electrostatic Force</span>
+                            <span class="pronunciation-telugu">ఎలక్ట్రోస్టాటిక్ ఫోర్స్ (స్థిర విద్యుత్ బలం)</span>
+                        </div>
+                    </td>
+                    <td>Force by charged bodies. Example: Rubbed balloon lifting paper bits. / ఉదా: కాగితపు ముక్కలను ఆకర్షించే బెలూన్.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">8. Gravitational Force</span>
+                            <span class="pronunciation-telugu">గ్రావిటేషనల్ ఫోర్స్ (గురుత్వాకర్షణ బలం)</span>
+                        </div>
+                    </td>
+                    <td>Attractive force between masses. Example: Pen falling to the floor. / ఉదా: కలం నేలపై పడిపోవడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">9. Muscular Force</span>
+                            <span class="pronunciation-telugu">మస్క్యులర్ ఫోర్స్ (కండర బలం)</span>
+                        </div>
+                    </td>
+                    <td>Force exerted by muscles. Example: Walking or running. / ఉదా: నడవడం లేదా పరుగెత్తడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">10. Friction</span>
+                            <span class="pronunciation-telugu">ఫ్రిక్షన్ (ఘర్షణ బలం)</span>
+                        </div>
+                    </td>
+                    <td>Resistance to relative motion. Example: Bicycle stopping on road. / ఉదా: సైకిల్ ఆగిపోవడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">11. Normal Force</span>
+                            <span class="pronunciation-telugu">నార్మల్ ఫోర్స్ (లంబ బలం)</span>
+                        </div>
+                    </td>
+                    <td>Perpendicular support force. Example: Table supporting a book. / ఉదా: బల్ల పుస్తకాన్ని నిలపడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">12. Tension</span>
+                            <span class="pronunciation-telugu">టెన్షన్ (తన్యత)</span>
+                        </div>
+                    </td>
+                    <td>Pulling force in strings. Example: Stone tied to hanging string. / ఉదా: దారానికి కట్టిన రాయి.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">13. Net Force</span>
+                            <span class="pronunciation-telugu">నెట్ ఫోర్స్ (నికర బలం)</span>
+                        </div>
+                    </td>
+                    <td>Vector sum of all forces. Example: Pushing a heavy table together. / ఉదా: ఇద్దరు కలిసి బల్ల నెట్టడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">14. Magnitude</span>
+                            <span class="pronunciation-telugu">మ్యాగ్నిట్యూడ్ (పరిమాణం)</span>
+                        </div>
+                    </td>
+                    <td>Numerical value of force. Example: Force of 10 Newtons. / ఉదా: 10 న్యూటన్ల బలం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">15. Equilibrium</span>
+                            <span class="pronunciation-telugu">ఈక్విలిబ్రియం (సమతా స్థితి)</span>
+                        </div>
+                    </td>
+                    <td>Net force is zero. Example: Book resting on a table. / ఉదా: బల్లపై ఉన్న పుస్తకం కదలకపోవడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">16. State of Motion</span>
+                            <span class="pronunciation-telugu">స్టేట్ ఆఫ్ మోషన్ (చలన స్థితి)</span>
+                        </div>
+                    </td>
+                    <td>Rest or movement state. Example: A car accelerating. / ఉదా: కారు వేగంగా వెళ్లడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">17. Pressure</span>
+                            <span class="pronunciation-telugu">ప్రెషర్ (పీడనం)</span>
+                        </div>
+                    </td>
+                    <td>Force per unit area. Example: Sharp knife cutting easily. / ఉదా: పదునైన చాకు కోయడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">18. Free Body Diagram</span>
+                            <span class="pronunciation-telugu">ఫ్రీ బాడీ డయాగ్రామ్ (స్వేచ్ఛా వస్తువు చిత్రం)</span>
+                        </div>
+                    </td>
+                    <td>Diagram showing all forces. Example: Car forces (W, N, F, f). / ఉదా: కారుపై పనిచేసే బలాల చిత్రం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">19. Acceleration</span>
+                            <span class="pronunciation-telugu">యాక్సిలరేషన్ (త్వరణం)</span>
+                        </div>
+                    </td>
+                    <td>Rate of change of velocity. Example: Falling stone speeding up. / ఉదా: వేగంగా కిందకు పడే రాయి.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">20. Deceleration</span>
+                            <span class="pronunciation-telugu">డీసెలిరేషన్ (మందగమనం)</span>
+                        </div>
+                    </td>
+                    <td>Decrease in speed. Example: Rolling ball stopping. / ఉదా: బంతి వేగం తగ్గడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">21. Newton (N)</span>
+                            <span class="pronunciation-telugu">న్యూటన్ (బల ప్రమాణం)</span>
+                        </div>
+                    </td>
+                    <td>SI unit of force. Example: 1 N force applied. / ఉదా: 1 న్యూటన్ బలం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">22. Pascal</span>
+                            <span class="pronunciation-telugu">పాస్కల్ (పీడన ప్రమాణం)</span>
+                        </div>
+                    </td>
+                    <td>SI unit of pressure. Example: 1 Pa pressure. / ఉదా: 1 పాస్కల్ పీడనం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">23. Interlocking</span>
+                            <span class="pronunciation-telugu">ఇంటర్‌లాకింగ్ (అతుక్కుపోవడం)</span>
+                        </div>
+                    </td>
+                    <td>Surface irregularities locking. Example: Tyres gripping road. / ఉదా: టైర్లు రోడ్డును పట్టుకోవడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">24. Inclined Plane</span>
+                            <span class="pronunciation-telugu">ఇన్‌క్లైండ్ ప్లేన్ (వాలు తలం)</span>
+                        </div>
+                    </td>
+                    <td>Slanted surface. Example: Tray tilted for sliding ice cube. / ఉదా: వాలుగా ఉన్న ట్రే.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">25. Spring Balance</span>
+                            <span class="pronunciation-telugu">స్ప్రింగ్ బ్యాలెన్స్ (స్ప్రింగ్ త్రాసు)</span>
+                        </div>
+                    </td>
+                    <td>Device measuring force. Example: Pulling brick with spring balance. / ఉదా: స్ప్రింగ్ త్రాసుతో లాగడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">26. Limiting Force</span>
+                            <span class="pronunciation-telugu">లిమిటింగ్ ఫోర్స్ (పరిమితి బలం)</span>
+                        </div>
+                    </td>
+                    <td>Maximum force bearable. Example: String breaking limit. / ఉదా: తాడు తెగే గరిష్ట బలం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">27. Coordinate System</span>
+                            <span class="pronunciation-telugu">కోఆర్డినేట్ సిస్టమ్ (నిరూపక వ్యవస్థ)</span>
+                        </div>
+                    </td>
+                    <td>X and Y axes system. Example: Graph axes. / ఉదా: ఎక్స్ - వై అక్షాలు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">28. Sign Convention</span>
+                            <span class="pronunciation-telugu">సైన్ కన్వెన్షన్ (గుర్తు సాంప్రదాయం)</span>
+                        </div>
+                    </td>
+                    <td>Positive/negative directions. Example: Right as positive. / ఉదా: కుడివైపు ధనాత్మకంగా తీసుకోవడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">29. Deformation</span>
+                            <span class="pronunciation-telugu">డిఫార్మేషన్ (రూపవికృతి)</span>
+                        </div>
+                    </td>
+                    <td>Shape change. Example: Squeezing sponge. / ఉదా: స్పంజ్ పిండడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">30. Temporary Change</span>
+                            <span class="pronunciation-telugu">టెంపరరీ చేంజ్ (తాత్కాలిక మార్పు)</span>
+                        </div>
+                    </td>
+                    <td>Reversible shape change. Example: Stretching rubber band. / ఉదా: రబ్బరు బ్యాండ్ సాగదీయడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">31. Permanent Change</span>
+                            <span class="pronunciation-telugu">పర్మనెన్ట్ చేంజ్ (శాశ్వత మార్పు)</span>
+                        </div>
+                    </td>
+                    <td>Irreversible shape change. Example: Breaking a glass. / ఉదా: గాజు గ్లాస్ పగలగొట్టడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">32. Area of Contact</span>
+                            <span class="pronunciation-telugu">ఏరియా ఆఫ్ కాంటాక్ట్ (స్పర్శ వైశాల్యం)</span>
+                        </div>
+                    </td>
+                    <td>Touching surface area. Example: Wide bag straps. / ఉదా: వెడల్పాటి బ్యాగ్ట్్రాప్స్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">33. Perpendicular</span>
+                            <span class="pronunciation-telugu">పెర్పెండిక్యులర్ (లంబంగా)</span>
+                        </div>
+                    </td>
+                    <td>At 90 degrees. Example: Normal line on plane. / ఉదా: లంబ రేఖ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">34. Magnetic Field</span>
+                            <span class="pronunciation-telugu">మ్యాగ్నెటిక్ ఫీల్డ్ (అయస్కాంత క్షేత్రం)</span>
+                        </div>
+                    </td>
+                    <td>Region around magnet. Example: Space around bar magnet. / ఉదా: అయస్కాంతం చుట్టూ ఉండే ప్రదేశం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">35. Electric Field</span>
+                            <span class="pronunciation-telugu">ఎలక్ట్రిక్ ఫీల్డ్ (విద్యుత్ క్షేత్రం)</span>
+                        </div>
+                    </td>
+                    <td>Region around charges. Example: Space around charged balloon. / ఉదా: ఆవేశం చుట్టూ ఉండే క్షేత్రం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">36. Gravitational Field</span>
+                            <span class="pronunciation-telugu">గ్రావిటేషనల్ ఫీల్డ్ (గురుత్వ క్షేత్రం)</span>
+                        </div>
+                    </td>
+                    <td>Region around mass. Example: Earth's gravitational zone. / ఉదా: భూమి గురుత్వ ఆకర్షణ ప్రదేశం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">37. Field Lines</span>
+                            <span class="pronunciation-telugu">ఫీల్డ్ లైన్స్ (క్షేత్ర రేఖలు)</span>
+                        </div>
+                    </td>
+                    <td>Lines showing field strength. Example: Magnetic field lines. / ఉదా: అయస్కాంత బలరేఖలు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">38. Iron Filings</span>
+                            <span class="pronunciation-telugu">ఐరన్ ఫైలింగ్స్ (ఇనుప పొట్టు)</span>
+                        </div>
+                    </td>
+                    <td>Iron powder. Example: Showing magnetic field pattern. / ఉదా: అయస్కాంత ఆకారాన్ని చూపడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">39. Charged Body</span>
+                            <span class="pronunciation-telugu">చార్జ్డ్ బాడీ (ఆవేశపూరిత వస్తువు)</span>
+                        </div>
+                    </td>
+                    <td>Object with electric charge. Example: Rubbed comb. / ఉదా: తలకు రుద్దిన దువ్వెన.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">40. Inertia</span>
+                            <span class="pronunciation-telugu">ఇనర్షియా (జడత్వం)</span>
+                        </div>
+                    </td>
+                    <td>Resistance to motion change. Example: Bus starting suddenly. / ఉదా: బస్సు ఒక్కసారిగా కదలడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">41. Buoyancy</span>
+                            <span class="pronunciation-telugu">బాయన్సీ (ప్లవన శక్తి)</span>
+                        </div>
+                    </td>
+                    <td>Upward fluid force. Example: Object floating in water. / ఉదా: నీటిలో తేలే వస్తువు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">42. Recoil</span>
+                            <span class="pronunciation-telugu">రీకాయిల్ (వెనుకకు నెట్టుట)</span>
+                        </div>
+                    </td>
+                    <td>Backward kick. Example: Firing a gun. / ఉదా: తుపాకీ పేల్చినప్పుడు వెనక్కి అనడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">43. Atmosphere</span>
+                            <span class="pronunciation-telugu">అట్మాస్పియర్ (వాతావరణం)</span>
+                        </div>
+                    </td>
+                    <td>Air layer around Earth. Example: Earth holding air. / ఉదా: భూమి చుట్టూ గాలి పొర.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">44. Tides</span>
+                            <span class="pronunciation-telugu">టైడ్స్ (సముద్రపు అలలు)</span>
+                        </div>
+                    </td>
+                    <td>Sea level changes. Example: Moon gravity causing tides. / ఉదా: చంద్రుని ఆకర్షణ వల్ల అలలు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">45. Axis</span>
+                            <span class="pronunciation-telugu">యాక్సిస్ (అక్షం)</span>
+                        </div>
+                    </td>
+                    <td>Reference line. Example: X and Y axis. / ఉదా: అక్షరేఖ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">46. Algebraic Sum</span>
+                            <span class="pronunciation-telugu">అల్జీబ్రిక్ సమ్ (బీజీయ మొత్తం)</span>
+                        </div>
+                    </td>
+                    <td>Sum considering signs. Example: Net force calculation. / ఉదా: గుర్తులను బట్టి బలాల మొత్తం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">47. Equilibrium Point</span>
+                            <span class="pronunciation-telugu">ఈక్విలిబ్రియం పాయింట్ (సమతా బిందువు)</span>
+                        </div>
+                    </td>
+                    <td>Balanced point. Example: Arm wrestling tie. / ఉదా: ఆర్మ్ రెస్లింగ్ సమతుల్యత.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">48. Arm Wrestling</span>
+                            <span class="pronunciation-telugu">ఆర్మ్ రెస్లింగ్ (చేతుల బలం పోటీ)</span>
+                        </div>
+                    </td>
+                    <td>Game of pushing opponent's arm. Example: Two friends competing. / ఉదా: చేయి తిప్పే ఆట.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">49. Squeezing</span>
+                            <span class="pronunciation-telugu">స్క్వీజింగ్ (పిండడం)</span>
+                        </div>
+                    </td>
+                    <td>Compressing object. Example: Squeezing lemon or sponge. / ఉదా: నిమ్మకాయ పిండడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">50. Twisting</span>
+                            <span class="pronunciation-telugu">ట్విస్టింగ్ (మెలిపెట్టడం)</span>
+                        </div>
+                    </td>
+                    <td>Rotating opposite ends. Example: Twisting wet cloth. / ఉదా: తడి గుడ్డ పిండడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">51. Stretching</span>
+                            <span class="pronunciation-telugu">స్ట్రెచింగ్ (సాగదీయడం)</span>
+                        </div>
+                    </td>
+                    <td>Pulling apart ends. Example: Stretching elastic band. / ఉదా: రబ్బరు లాగడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">52. Lowering</span>
+                            <span class="pronunciation-telugu">లోవరింగ్ (కిందకు దించడం)</span>
+                        </div>
+                    </td>
+                    <td>Moving downward. Example: Lowering basket. / ఉదా: గంప కిందకు దించడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">53. Lifting</span>
+                            <span class="pronunciation-telugu">లిఫ్టింగ్ (పైకి ఎత్తడం)</span>
+                        </div>
+                    </td>
+                    <td>Moving upward. Example: Lifting stone. / ఉదా: రాయి పైకి ఎత్తడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">54. Digging</span>
+                            <span class="pronunciation-telugu">డిగ్గింగ్ (తవ్వడం)</span>
+                        </div>
+                    </td>
+                    <td>Breaking ground soil. Example: Digging borewell. / ఉదా: బోరు బావి తవ్వడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">55. Sipping</span>
+                            <span class="pronunciation-telugu">సిప్పింగ్ (పీల్చడం)</span>
+                        </div>
+                    </td>
+                    <td>Drinking through straw. Example: Sipping juice with straw. / ఉదా: స్ట్రాతో జ్యూస్ తాగడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">56. Erasing</span>
+                            <span class="pronunciation-telugu">ఎరేసింగ్ (చెరపడం)</span>
+                        </div>
+                    </td>
+                    <td>Removing markings. Example: Erasing blackboard. / ఉదా: బోర్డు రాయడం చెరపడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">57. Attracting</span>
+                            <span class="pronunciation-telugu">అట్రాక్టింగ్ (ఆకర్షించడం)</span>
+                        </div>
+                    </td>
+                    <td>Pulling closer. Example: Magnet attracting iron nails. / ఉదా: అయస్కాంతం ఇనుమును లాగడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">58. Hoisting</span>
+                            <span class="pronunciation-telugu">హాయిస్టింగ్ (ఎగరవేయడం)</span>
+                        </div>
+                    </td>
+                    <td>Raising a flag. Example: Hoisting national flag. / ఉదా: జెండా ఎగరవేయడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">59. Perpendicular</span>
+                            <span class="pronunciation-telugu">పెర్పెండిక్యులర్ (లంబంగా)</span>
+                        </div>
+                    </td>
+                    <td>90 degree angle. Example: Normal direction. / ఉదా: లంబ దిశ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">60. Non-Uniform Motion</span>
+                            <span class="pronunciation-telugu">నాన్-యూనిఫామ్ మోషన్ (అసమ చలనం)</span>
+                        </div>
+                    </td>
+                    <td>Motion with changing speed. Example: Accelerating car. / ఉదా: వేగం మారుతున్న కారు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">61. Uniform Motion</span>
+                            <span class="pronunciation-telugu">యూనిఫామ్ మోషన్ (సమ చలనం)</span>
+                        </div>
+                    </td>
+                    <td>Constant speed motion. Example: Car at steady speed. / ఉదా: ఒకే వేగంతో కారు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">62. Weight</span>
+                            <span class="pronunciation-telugu">వెయిట్ (బరువు)</span>
+                        </div>
+                    </td>
+                    <td>Gravitational force on mass. Example: Weight of a book. / ఉదా: పుస్తకం బరువు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">63. Suspended Body</span>
+                            <span class="pronunciation-telugu">సస్పెండెడ్ బాడీ (వేలాడదీసిన వస్తువు)</span>
+                        </div>
+                    </td>
+                    <td>Body hung by string. Example: Stone tied to ceiling string. / ఉదా: దారానికి వేలాడిన రాయి.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">64. Ceiling</span>
+                            <span class="pronunciation-telugu">సీలింగ్ (పైకప్పు)</span>
+                        </div>
+                    </td>
+                    <td>Top inner roof. Example: Fan hanging from ceiling. / ఉదా: గది పైకప్పు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">65. Spring Balance Reading</span>
+                            <span class="pronunciation-telugu">స్ప్రింగ్ బ్యాలెన్స్ రీడింగ్ (స్ప్రింగ్ త్రాసు సూచిక)</span>
+                        </div>
+                    </td>
+                    <td>Measured force value. Example: Weight of 50 gm hanger. / ఉదా: త్రాసు రీడింగ్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">66. Arm Force</span>
+                            <span class="pronunciation-telugu">ఆర్మ్ ఫోర్స్ (చేతి కండర బలం)</span>
+                        </div>
+                    </td>
+                    <td>Force in arms. Example: Arm wrestling force. / ఉదా: చేతి బలం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">67. Direction of Motion</span>
+                            <span class="pronunciation-telugu">డైరెక్షన్ ఆఫ్ మోషన్ (చలన దిశ)</span>
+                        </div>
+                    </td>
+                    <td>Path direction. Example: Car moving forward. / ఉదా: కారు వెళ్లే దిశ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">68. Striker</span>
+                            <span class="pronunciation-telugu">స్ట్రైకర్ (స్ట్రైకర్)</span>
+                        </div>
+                    </td>
+                    <td>Carrom game striker. Example: Hitting carrom coin. / ఉదా: క్యారమ్ కాయ కొట్టడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">69. Carrom Coin</span>
+                            <span class="pronunciation-telugu">క్యారమ్ కాయిన్ (క్యారమ్ కాయ)</span>
+                        </div>
+                    </td>
+                    <td>Coin on carrom board. Example: Moving coin with striker. / ఉదా: క్యారమ్ కాయ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">70. Rubber Tyre</span>
+                            <span class="pronunciation-telugu">రబ్బరు టైర్ (రబ్బరు టైర్)</span>
+                        </div>
+                    </td>
+                    <td>Tyre pushed by children with stick. Example: Playing with tyre. / ఉదా: పిల్లలు కొట్టే ట్యూబ్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">71. Porters</span>
+                            <span class="pronunciation-telugu">పోర్టర్స్ (మోతగాళ్ళు / కూలీలు)</span>
+                        </div>
+                    </td>
+                    <td>People carrying loads. Example: Porters using turbans. / ఉదా: బరువ మోసే కూలీలు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">72. Turban (Talapaga)</span>
+                            <span class="pronunciation-telugu">తలపాగ (తలపాగ)</span>
+                        </div>
+                    </td>
+                    <td>Cloth cushion on head. Example: Porters carrying loads on head. / ఉదా: బరువు మోసేటప్పుడు తలపై పెట్టుకునే గుడ్డ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">73. Broad Straps</span>
+                            <span class="pronunciation-telugu">బ్రాడ్ స్ట్రాప్స్ (వెడల్పాటి బెల్టులు)</span>
+                        </div>
+                    </td>
+                    <td>Shoulder straps on bags. Example: School bag straps reducing pressure. / ఉదా: బ్యాగ్ వెడల్పాటి బెల్టులు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">74. Broader Tyres</span>
+                            <span class="pronunciation-telugu">బ్రోడర్ టైర్స్ (వెడల్పాటి టైర్లు)</span>
+                        </div>
+                    </td>
+                    <td>Tyres of heavy lorries. Example: Spreading load over larger area. / ఉదా: లారీ వెడల్పాటి టైర్లు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">75. Lime Powder</span>
+                            <span class="pronunciation-telugu">లైమ్ పౌడర్ (సున్నపు పొడి)</span>
+                        </div>
+                    </td>
+                    <td>Fine powder used in brick sinking activity. Example: Tray experiment. / ఉదా: సున్నపు పొడి.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">76. Fine Sand</span>
+                            <span class="pronunciation-telugu">ఫైన్ సాండ్ (సన్నని ఇసుక)</span>
+                        </div>
+                    </td>
+                    <td>Sand used in experiments. Example: Brick depth tray. / ఉదా: సన్నని ఇసుక.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">77. Brick Depth</span>
+                            <span class="pronunciation-telugu">బ్రిక్ డెప్త్ (ఇటుక దిగే లోతు)</span>
+                        </div>
+                    </td>
+                    <td>Depth of sinking. Example: Vertical brick sinking deeper. / ఉదా: ఇటుక దిగిన లోతు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">78. Blunt Side</span>
+                            <span class="pronunciation-telugu">బ్లంట్ సైడ్ (మొద్దుబారిన అంచు)</span>
+                        </div>
+                    </td>
+                    <td>Non-sharp side of knife. Example: Knife blunt side. / ఉదా: చాకు మొద్దుబారిన అంచు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">79. Sharp Side</span>
+                            <span class="pronunciation-telugu">షార్ప్ సైడ్ (పదునైన అంచు)</span>
+                        </div>
+                    </td>
+                    <td>Cutting edge of knife. Example: Sharp knife cutting easily. / ఉదా: చాకు పదునైన అంచు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">80. Unit Area</span>
+                            <span class="pronunciation-telugu">యూనిట్ ఏరియా (ప్రమాణ వైశాల్యం)</span>
+                        </div>
+                    </td>
+                    <td>1 square meter area. Example: Area for pressure formula. / ఉదా: ప్రమాణ వైశాల్యం.</td></tr>
+            </table>
+        </div>
+
+        <!-- ================= CHAPTER 1: ALL EXERCISES COMPLETELY SOLVED ================= -->
+        <div id="ch1-all-exercises" class="card">
+            <h1>Chapter 1: Complete "Improve Your Learning" Exercises & Solutions</h1>
+            
+            <h2>Reflections on Concepts</h2>
+
+            <div class="qa-box">
+                <p class="question">1. What is a force? What changes can be produced by a force? (AS1)</p>
+                <p><strong>Answer:</strong> A force is a push or a pull acting on an object. Changes produced by a force include: changing the state of rest or motion, changing speed, changing direction, and changing the shape temporarily or permanently.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> బలం అంటే వస్తువుపై చేసే నెట్టే లేదా లాగే చర్య. బలం వల్ల వస్తువు కదలడం, ఆగిపోవడం, వేగం మారడం, దిశ మారడం మరియు ఆకారం మారడం జరుగుతుంది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">2. Give two examples each for a contact force and a force at a distance. (AS1)</p>
+                <p><strong>Answer:</strong> 
+                    1. <strong>Contact Forces:</strong> Muscular force (lifting a bucket), Frictional force (walking on a floor).<br>
+                    2. <strong>Forces at a distance:</strong> Magnetic force (attracting iron nails), Gravitational force (apple falling down).
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> 1. స్పర్శా బలాలకు ఉదాహరణలు: కండర బలం (బకెట్ ఎత్తడం), ఘర్షణ బలం (నడవడం). 2. క్షేత్ర బలాలకు ఉదాహరణలు: అయస్కాంత బలం (ఇనుప ముక్కలను లాగడం), గురుత్వాకర్షణ బలం (కింద పడే వస్తువులు).</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">3. Explain Gravitational Force by giving a suitable example. (AS1)</p>
+                <p><strong>Answer:</strong> Gravitational force is the attractive force that exists between any two masses (or bodies) in the universe. Since the earth is massive, it pulls objects toward itself. Example: When a pen slips from our hand, it falls down to the floor due to Earth's gravitational pull.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> విశ్వంలోని ద్రవ్యరాశి ఉన్న ఏ రెండు వస్తువుల మధ్యనైనా ఆకర్షణ బలం ఉంటుంది. భూమి చాలా పెద్దది కాబట్టి వస్తువులను తన వైపు లాక్కుంటుంది. ఉదాహరణకు చేతిలో నుండి జారిన కలం భూమి ఆకర్షణ వల్ల కింద పడిపోవడం.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">4. Draw and explain a free body diagram (FBD) to show all the forces acting on a car. (AS5)</p>
+                <p><strong>Answer:</strong> When a car moves with non-uniform speed along a road, the forces acting on it are: 
+                    1. Forward force applied by the engine ($F$). 
+                    2. Frictional force applied by the road ($f$). 
+                    3. Normal forces ($N_1$ and $N_2$). 
+                    4. Downward gravitational force / weight ($W$). 
+                    Net force along x-axis: $F_{net,x} = f - F$; Net force along y-axis: $F_{net,y} = N_1 + N_2 - W$.
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> కారుపై పనిచేసే బలాలు: ఇంజిన్ బలం, రోడ్డు ఘర్షణ, లంబ బలాలు ($N_1, N_2$) మరియు గురుత్వ బరువు ($W$). ఎక్స్, వై అక్షాల వెంట నికర బలాలను లెక్కించవచ్చు.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">5. Why do tools meant for cutting always have sharp edges? (AS1)</p>
+                <p><strong>Answer:</strong> Cutting tools have sharp edges to have a very small area of contact. According to the pressure formula ($\text{Pressure} = \frac{\text{Force}}{\text{Area}}$), for a given force, a smaller surface area produces greater pressure, making cutting much easier.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> కోసే పరికరాలకు పదునైన అంచులు ఉండటం వల్ల స్పర్శ వైశాల్యం తక్కువగా ఉంటుంది. వైశాల్యం తక్కువగా ఉంటే పీడనం ఎక్కువై సులభంగా కోయవచ్చు.</div>
+            </div>
+
+            <h2>Application of Concepts</h2>
+
+            <div class="qa-box">
+                <p class="question">1. How can you differentiate between a contact force and a force at a distance? (AS1)</p>
+                <p><strong>Answer:</strong> 
+                    - <strong>Contact Force:</strong> Requires direct physical contact or interaction between two objects (e.g., pushing a table, muscular force).<br>
+                    - <strong>Force at a distance (Field Force):</strong> Acts without any physical contact between objects through a field (e.g., magnetic attraction, gravity).
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> స్పర్శా బలాలు పనిచేయడానికి భౌతిక తాకిడి అవసరం (ఉదా: బల్ల నెట్టడం). క్షేత్ర బలాలు ఎలాంటి తాకిడి లేకుండానే దూరం నుండి పనిచేస్తాయి (ఉదా: అయస్కాంతం, గురుత్వాకర్షణ).</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">2. Find the net forces from the given diagrams (Textbook diagrams a, b, c, d). (AS4)</p>
+                <p><strong>Answer:</strong> 
+                    - When forces act in the same direction, they are added ($F_{net} = F_1 + F_2$).<br>
+                    - When forces act in opposite directions along a straight line, the net force is their difference ($F_{net} = F_1 - F_2$).
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> ఒకే దిశలో ఉన్న బలాలను కలపాలి. వ్యతిరేక దిశలో ఉన్న బలాలైతే పెద్ద బలం నుండి చిన్న బలాన్ని తీసివేయాలి.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">3. A man stands still on a level floor. What forces act on him? Draw a free body diagram (FBD) to show all forces acting on him. (AS5)</p>
+                <p><strong>Answer:</strong> The forces acting on a man standing still on a level floor are: (1) Gravitational force (weight $W$) acting vertically downwards, and (2) Normal force ($N$) acting vertically upwards from the floor. Since he is at rest, $N = W$ and the net force is zero.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> నేలపై నిలబడిన మనిషిపై పనిచేసే బలాలు: భూమి గురుత్వాకర్షణ బరువు ($W$) కిందకు, నేల ఇచ్చే లంబ బలం ($N$) పైకి పనిచేస్తాయి. రెండు సమానంగా ఉండటం వల్ల నికర బలం సున్నా అవుతుంది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">4. The surface area of an object is $20\text{ m}^2$ and a force of $10\text{ N}$ is applied on it, then what is the pressure? (AS7)</p>
+                <p><strong>Answer:</strong> 
+                    $\text{Force} (F) = 10\text{ N}$, $\text{Area} (A) = 20\text{ m}^2$.<br>
+                    $\text{Pressure} = \frac{\text{Force}}{\text{Area}} = \frac{10}{20} = 0.5\text{ N/m}^2$ (Pascals).
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> పీడనం = బలం / వైశాల్యం = 10 / 20 = 0.5 N/m².</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">5. How do you appreciate the role of friction in facilitating our various activities? (AS6)</p>
+                <p><strong>Answer:</strong> Friction is vital in daily life. Without friction, we cannot walk, run, hold a pen, write on a blackboard, drive cars with brakes, or construct buildings. It provides the necessary grip for all motions.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> ఘర్షణ లేకపోతే మనం నడవలేం, రాయలేం, వాహనాలు నడపలేం. ప్రతి కదలికకు గ్రిప్ అందించడంలో ఘర్షణ పాత్ర ఎంతో గొప్పది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">6. Identify and draw all forces acting on the body shown in the diagram. (AS5)</p>
+                <p><strong>Answer:</strong> The forces generally include gravitational weight ($W$ downwards), normal reaction ($N$ upwards), applied force ($F$), and opposing friction ($f$).</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> వస్తువుపై పనిచేసే గురుత్వ బరువు, లంబ బలం, బాహ్య బలం మరియు ఘర్షణ బలాలను గుర్తించి చిత్రంలో చూపాలి.</div>
+            </div>
+
+            <h2>Higher Order Thinking Questions</h2>
+
+            <div class="qa-box">
+                <p class="question">1. If you push a heavy box which is at rest, you must exert some force to start its motion. However once the box is sliding you apply a lesser force to maintain that motion. Why? (AS1)</p>
+                <p><strong>Answer:</strong> Static friction (which resists motion from rest) has a maximum limit that is higher than sliding friction. Once the box starts sliding, sliding friction comes into play, which is lesser than maximum static friction, requiring less force to maintain motion.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> వస్తువు కదలడానికి ముందు స్థిర ఘర్షణ గరిష్టంగా ఉంటుంది. వస్తువు జారడం ప్రారంభమయ్యాక జారుడు ఘర్షణ ఏర్పడుతుంది, ఇది స్థిర ఘర్షణ కంటే తక్కువగా ఉంటుంది కాబట్టి తక్కువ బలం సరిపోతుంది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">2. How do you increase the pressure by keeping (a) area unchanged (b) force unchanged? (AS1)</p>
+                <p><strong>Answer:</strong> 
+                    (a) If area is unchanged, increase the applied force.<br>
+                    (b) If force is unchanged, decrease the surface area of contact.
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> (a) వైశాలయం మార్చకుండా పీడనం పెంచాలంటే బలాన్ని పెంచాలి. (b) బలాన్ని మార్చకుండా పీడనం పెంచాలంటే స్పర్శ వైశాల్యాన్ని తగ్గించాలి.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">3. Imagine that friction disappeared from the earth. What will happen? Explain. (AS2)</p>
+                <p><strong>Answer:</strong> If friction disappeared, we could not walk or run without slipping, cars could not stop or start, writing with a pen or chalk would be impossible, and no buildings could be constructed.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> ఘర్షణ గనుక లేకపోతే మనం నడవలేం, వాహనాలను ఆపలేం, రాయలేం మరియు భవనాలను నిర్మించలేం.</div>
+            </div>
+        </div>
+
+        <!-- ================= CHAPTER 2: FRICTION ================= -->
+        <div id="ch2-main" class="card friction-card">
+            <h1>Chapter 2: Friction (ఘర్షణ)</h1>
+            
+            <h2>1. Introduction to Friction</h2>
+            <p>Friction is the opposing force that comes into play when one body moves or tends to move over the surface of another body. It acts parallel to the surfaces in contact and opposite to the direction of motion.</p>
+            <div class="telugu-desc">
+                <strong>తెలుగు వివరణ:</strong> ఒక వస్తువు మరొక వస్తువు తలంపై కదులుతున్నప్పుడు లేదా కదలడానికి ప్రయత్నిస్తున్నప్పుడు వాటి మధ్య సాపేక్ష చలనాన్ని వ్యతిరేకించే బలాన్ని 'ఘర్షణ' (Friction) అంటారు. ఇది ఎప్పుడూ చలన దిశకు వ్యతిరేకంగా పనిచేస్తుంది.
+            </div>
+
+            <h2>2. Types of Friction</h2>
+            <p>Friction is categorized into static friction, sliding friction, rolling friction, and fluid friction (drag).</p>
+            <div class="telugu-desc">
+                <strong>తెలుగు వివరణ:</strong> ఘర్షణ రకాలు: స్థిర ఘర్షణ, జారుడు ఘర్షణ, దొర్లుడు ఘర్షణ మరియు తరల ఘర్షణ (డ్రాగ్).
+            </div>
+        </div>
+
+        <!-- ================= CHAPTER 2 GLOSSARY (80+ Terms with Pronunciation under Left Column) ================= -->
+        <div id="ch2-glossary" class="card friction-card">
+            <h1>Chapter 2: Comprehensive Glossary & Vocabulary (80+ Terms)</h1>
+            <p>Explore all key technical terms from Chapter 2 with English terms, Telugu pronunciation underneath, and bilingual definitions/examples.</p>
+            <table>
+                <tr>
+                    <th>Term (English)</th>
+                    <th>Definition & Bilingual Example</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">1. Friction</span>
+                            <span class="pronunciation-telugu">ఫ్రిక్షన్ (ఘర్షణ)</span>
+                        </div>
+                    </td>
+                    <td>Opposing relative motion force. Example: Brakes stopping car. / ఉదా: బ్రేకులు వేయడం వల్ల కారు ఆగుట.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">2. Static Friction</span>
+                            <span class="pronunciation-telugu">స్టాటిక్ ఫ్రిక్షన్ (స్థిర ఘర్షణ)</span>
+                        </div>
+                    </td>
+                    <td>Friction at rest state. Example: Initial push on box. / ఉదా: పెట్టెను కదిలించడానికి మొదట పెట్టే బలం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">3. Sliding Friction</span>
+                            <span class="pronunciation-telugu">స్లైడింగ్ ఫ్రిక్షన్ (జారుడు ఘర్షణ)</span>
+                        </div>
+                    </td>
+                    <td>Friction during sliding. Example: Sliding book on table. / ఉదా: బల్లపై పుస్తకం జారడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">4. Rolling Friction</span>
+                            <span class="pronunciation-telugu">రోలింగ్ ఫ్రిక్షన్ (దొర్లుడు ఘర్షణ)</span>
+                        </div>
+                    </td>
+                    <td>Friction during rolling. Example: Wheel rolling. / ఉదా: చక్రం దొర్లడం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">5. Fluid Friction (Drag)</span>
+                            <span class="pronunciation-telugu">ఫ్లూయిడ్ ఫ్రిక్షన్ (తరల ఘర్షణ)</span>
+                        </div>
+                    </td>
+                    <td>Friction in fluids. Example: Airplane in air. / ఉదా: గాలిలో పయనించే విమానం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">6. Lubricant</span>
+                            <span class="pronunciation-telugu">లూబ్రికెంట్ (కందెన)</span>
+                        </div>
+                    </td>
+                    <td>Friction reducer. Example: Engine oil. / ఉదా: ఇంజిన్ ఆయిల్.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">7. Ball Bearings</span>
+                            <span class="pronunciation-telugu">బాల్ బేరింగ్స్ (బాల్ బేరింగ్స్)</span>
+                        </div>
+                    </td>
+                    <td>Steel balls for smooth rotation. Example: Fan axle. / ఉదా: ఫ్యాన్ అక్షంలో వాడేవి.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">8. Irregularities</span>
+                            <span class="pronunciation-telugu">ఇర్రెగ్యులారిటీస్ (అసమానతలు)</span>
+                        </div>
+                    </td>
+                    <td>Surface bumps and dips. Example: Rough table surface. / ఉదా: గరుకైన తలం.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">9. Self-adjusting Force</span>
+                            <span class="pronunciation-telugu">సెల్ఫ్-అడ్జస్టింగ్ ఫోర్స్ (స్వయం సర్దుబాటు బలం)</span>
+                        </div>
+                    </td>
+                    <td>Force adapting to applied force. Example: Static friction adjustment. / ఉదా: స్థిర ఘర్షణ.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">10. Streamlined Shape</span>
+                            <span class="pronunciation-telugu">స్ట్రీమ్‌‌‌‌లైన్డ్ షేప్ (ధారరేఖా ఆకారం)</span>
+                        </div>
+                    </td>
+                    <td>Tear-drop shape. Example: Fish body shape. / ఉదా: చేప శరీరాకృతి.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">11. Spring Balance</span>
+                            <span class="pronunciation-telugu">స్ప్రింగ్ బ్యాలెన్స్ (స్ప్రింగ్ త్రాసు)</span>
+                        </div>
+                    </td>
+                    <td>Force measuring tool. Example: Pulling brick. / ఉదా: ఇటుకను లాగి త్రాసుతో కొలవడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">12. Deceleration</span>
+                            <span class="pronunciation-telugu">డీసెలిరేషన్ (మందగమనం)</span>
+                        </div>
+                    </td>
+                    <td>Negative acceleration. Example: Bike slowing down. / ఉదా: బైక్ వేగం తగ్గడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">13. Normal Force</span>
+                            <span class="pronunciation-telugu">నార్మల్ ఫోర్స్ (లంబ బలం)</span>
+                        </div>
+                    </td>
+                    <td>Perpendicular force. Example: Floor pushing box up. / ఉదా: నేల ఇచ్చే లంబ బలం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">14. Proportionality</span>
+                            <span class="pronunciation-telugu">ప్రొపోర్షనాలిటీ (అనులోమానుపాతం)</span>
+                        </div>
+                    </td>
+                    <td>Direct scaling. Example: Friction proportional to normal force. / ఉదా: లంబ బలానికి అనులోమానుపాతం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">15. Wear and Tear</span>
+                            <span class="pronunciation-telugu">వియర్ అండ్ టియర్ (అరుగుదల)</span>
+                        </div>
+                    </td>
+                    <td>Damage from rubbing. Example: Shoe soles wearing out. / ఉదా: బూట్ల అడుగులు అరిగిపోవడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">16. Overheating</span>
+                            <span class="pronunciation-telugu">ఓవర్‌హీటింగ్ (అధిక వేడెక్కడం)</span>
+                        </div>
+                    </td>
+                    <td>Heat generation. Example: Machine parts getting hot. / ఉదా: యంత్ర భాగాలు వేడెక్కడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">17. Spikes</span>
+                            <span class="pronunciation-telugu">స్పైక్స్ (ముళ్ళ అంచెలు)</span>
+                        </div>
+                    </td>
+                    <td>Cleats on shoes. Example: Sports runner shoes. / ఉదా: రన్నర్ బూట్ల ముళ్ళు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">18. Grooves</span>
+                            <span class="pronunciation-telugu">గ్రూవ్స్ (గాళ్లు)</span>
+                        </div>
+                    </td>
+                    <td>Tyre treads. Example: Car tyre patterns. / ఉదా: కార్ టైర్లపై గీతలు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">19. Viscosity</span>
+                            <span class="pronunciation-telugu">విస్కాసిటీ (స్నిగ్ధత)</span>
+                        </div>
+                    </td>
+                    <td>Fluid thickness. Example: Thick honey vs water. / ఉదా: తేనె చిక్కదనం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">20. Coarse Substance</span>
+                            <span class="pronunciation-telugu">కోర్స్ సబ్‌స్టాన్స్ (గరుకైన పదార్థం)</span>
+                        </div>
+                    </td>
+                    <td>Powder for grip. Example: Gymnasts hand powder. / ఉదా: జిమ్నాస్ట్లు రాసుకునే పొడి.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">21. Hinge</span>
+                            <span class="pronunciation-telugu">హింజ్ (కీలు బందు)</span>
+                        </div>
+                    </td>
+                    <td>Door joint. Example: Door hinges with oil. / ఉదా: తలుపు కీళ్ళు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">22. Carrom Powder</span>
+                            <span class="pronunciation-telugu">క్యారమ్ పౌడర్ (బోరిక్ పౌడర్)</span>
+                        </div>
+                    </td>
+                    <td>Boric powder. Example: Powder on carrom board. / ఉదా: క్యారమ్ బోర్డ్ పౌడర్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">23. Pulley</span>
+                            <span class="pronunciation-telugu">పుల్లీ (గిలక / పుల్లీ)</span>
+                        </div>
+                    </td>
+                    <td>Grooved wheel. Example: Well pulley. / ఉదా: బావి గిలక.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">24. Toy Trolley</span>
+                            <span class="pronunciation-telugu">టాయ్ ట్రాలీ (బొమ్మ ట్రాలీ)</span>
+                        </div>
+                    </td>
+                    <td>Lab trolley. Example: Trolley with block. / ఉదా: ల్యాబ్ ట్రాలీ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">25. Inextensible String</span>
+                            <span class="pronunciation-telugu">ఇన్‌ఎక్స్టెన్సిబుల్ స్ట్రింగ్ (సాగని దారము)</span>
+                        </div>
+                    </td>
+                    <td>Constant length string. Example: Trolley string. / ఉదా: సాగని దారం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">26. Inclined Plane</span>
+                            <span class="pronunciation-telugu">ఇన్‌క్లైండ్ ప్లేన్ (వాలు తలం)</span>
+                        </div>
+                    </td>
+                    <td>Slanted board. Example: Tray lifted at one end. / ఉదా: వాలుగా పెట్టిన ట్రే.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">27. Marble Floor</span>
+                            <span class="pronunciation-telugu">మార్బుల్ ఫ్లోర్ (పాలరాతి నేల)</span>
+                        </div>
+                    </td>
+                    <td>Smooth floor. Example: Polished marble. / ఉదా: నునుపైన పాలరాతి నేల.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">28. Sandy Surface</span>
+                            <span class="pronunciation-telugu">స్యాండీ సర్ఫేస్ (ఇసుక నేల)</span>
+                        </div>
+                    </td>
+                    <td>Rough sandy floor. Example: Sand ground. / ఉదా: ఇసుక నేల.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">29. Matchstick</span>
+                            <span class="pronunciation-telugu">మ్యాచ్‌స్టిక్ (అగ్గిపుల్ల)</span>
+                        </div>
+                    </td>
+                    <td>Fire stick. Example: Striking match. / ఉదా: అగ్గిపుల్ల వెలిగించడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">30. Energy Dissipation</span>
+                            <span class="pronunciation-telugu">ఎనర్జీ డిస్సిపేషన్ (శక్తి నష్టం)</span>
+                        </div>
+                    </td>
+                    <td>Loss of useful energy. Example: Heat lost in brakes. / ఉదా: శక్తి వృథా కావడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">31. Efficiency</span>
+                            <span class="pronunciation-telugu">ఎఫీషియన్సీ (దక్షత)</span>
+                        </div>
+                    </td>
+                    <td>Working performance. Example: High machine efficiency. / ఉదా: యంత్ర దక్షత.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">32. Aerodynamics</span>
+                            <span class="pronunciation-telugu">ఏరోడైనమిక్స్ (గతినైతిక శాస్త్రం)</span>
+                        </div>
+                    </td>
+                    <td>Air flow science. Example: Rocket shape design. / ఉదా: రాకెట్ ఆకార రూపకల్పన.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">33. Hydrodynamics</span>
+                            <span class="pronunciation-telugu">హైడ్రోడైనమిక్స్ (ద్రవ గతినైతిక శాస్త్రం)</span>
+                        </div>
+                    </td>
+                    <td>Water flow science. Example: Submarine design. / ఉదా: నీటిలో కదిలే నౌకల రూపకల్పన.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">34. Parachute</span>
+                            <span class="pronunciation-telugu">పారాచూట్ (పారాచూట్)</span>
+                        </div>
+                    </td>
+                    <td>Air drag resistance device. Example: Skydiving parachute. / ఉదా: పారాచూట్ వాడకం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">35. Tread Pattern</span>
+                            <span class="pronunciation-telugu">ట్రెడ్ పాటర్న్ (టైర్ నమూనా)</span>
+                        </div>
+                    </td>
+                    <td>Tyre grooves. Example: Rain grip tyre design. / ఉదా: టైర్ల డిజైన్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">36. Relative Motion</span>
+                            <span class="pronunciation-telugu">రిలేటివ్ మోషన్ (సాపేక్ష చలనం)</span>
+                        </div>
+                    </td>
+                    <td>Motion between two objects. Example: Book moving on floor. / ఉదా: బల్లపై కదిలే పుస్తకం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">37. Thermal Energy</span>
+                            <span class="pronunciation-telugu">థర్మల్ ఎనర్జీ (ఉష్ణ శక్తి)</span>
+                        </div>
+                    </td>
+                    <td>Heat energy. Example: Rubbing palms together. / ఉదా: చేతులు రుద్దితే వచ్చే వేడి.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">38. Grease</span>
+                            <span class="pronunciation-telugu">గ్రీజు (గ్రీజు)</span>
+                        </div>
+                    </td>
+                    <td>Semi-solid lubricant. Example: Bicycle ball bearings grease. / ఉదా: గ్రీజు వాడకం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">39. Graphite</span>
+                            <span class="pronunciation-telugu">గ్రాఫైట్ (గ్రాఫైట్)</span>
+                        </div>
+                    </td>
+                    <td>Solid dry lubricant. Example: Pencil lead lubricant. / ఉదా: పెన్సిల్ సీసం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">40. Cushion of Air</span>
+                            <span class="pronunciation-telugu">కుషన్ ఆఫ్ ఎయిర్ (గాలి దిండు)</span>
+                        </div>
+                    </td>
+                    <td>Air layer support. Example: Hovercraft mechanism. / ఉదా: గాలి పై నడిచే నౌక.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">41. Resistance</span>
+                            <span class="pronunciation-telugu">రెసిస్టెన్స్ (నిరోధం)</span>
+                        </div>
+                    </td>
+                    <td>Opposition force. Example: Motion resistance. / ఉదా: నిరోధక శక్తి.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">42. Equilibrium State</span>
+                            <span class="pronunciation-telugu">ఈక్విలిబ్రియం స్టేట్ (సమతా స్థితి)</span>
+                        </div>
+                    </td>
+                    <td>Balanced forces. Example: Object at rest. / ఉదా: నిశ్చల సమతుల్యత.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">43. Contact Area</span>
+                            <span class="pronunciation-telugu">కాంటాక్ట్ ఏరియా (స్పర్శ వైశాల్యం)</span>
+                        </div>
+                    </td>
+                    <td>Touching area. Example: Brick surface area. / ఉదా: తాకే తలం వైశాల్యం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">44. Maximum Friction</span>
+                            <span class="pronunciation-telugu">మాక్సిమమ్ ఫ్రిక్షన్ (గరిష్ట ఘర్షణ)</span>
+                        </div>
+                    </td>
+                    <td>Peak static friction limit. Example: Just before box moves. / ఉదా: పెట్టె కదలబోయే ముందు ఘర్షణ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">45. Spring Scale</span>
+                            <span class="pronunciation-telugu">స్ప్రింగ్ స్కేల్ (స్ప్రింగ్ త్రాసు)</span>
+                        </div>
+                    </td>
+                    <td>Force meter. Example: Measuring pull. / ఉదా: బలాన్ని కొలిచే త్రాసు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">46. Kilogram-weight</span>
+                            <span class="pronunciation-telugu">కిలోగ్రామ్-వెయిట్ (కిలోగ్రామ్ భారం)</span>
+                        </div>
+                    </td>
+                    <td>Unit of force. Example: Force equivalent to 1 kg mass. / ఉదా: కిలోగ్రామ్ బరువు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">47. Interlocking Overcome</span>
+                            <span class="pronunciation-telugu">ఇంటర్‌లాకింగ్ ఓవర్‌కమ్ (అసమానతలను దాటడం)</span>
+                        </div>
+                    </td>
+                    <td>Breaking surface locks. Example: Pushing heavy box. / ఉదా: గరుకుదనాన్ని దాటడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">48. Muddy Surface</span>
+                            <span class="pronunciation-telugu">మడ్ పుడిల్ (బురద నేల)</span>
+                        </div>
+                    </td>
+                    <td>Slippery wet soil. Example: Walking in mud. / ఉదా: బురదలో నడవడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">49. Rainy Days</span>
+                            <span class="pronunciation-telugu">రైనీ డేస్ (వర్షాకాలం రోజులు)</span>
+                        </div>
+                    </td>
+                    <td>Slippery road conditions. Example: Road accidents in rain. / ఉదా: వర్షాకాలంలో జారే రోడ్లు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">50. Tyre Threading</span>
+                            <span class="pronunciation-telugu">టైర్ ట్రెడ్డింగ్ (టైర్ అంచులు)</span>
+                        </div>
+                    </td>
+                    <td>Worn out tyre grooves. Example: Changing bald tyres. / ఉదా: టైర్ల అరుగుదల.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">51. Gymnasts</span>
+                            <span class="pronunciation-telugu">జిమ్నాస్ట్స్ (జిమ్నాస్ట్లు)</span>
+                        </div>
+                    </td>
+                    <td>Sports acrobats. Example: Applying powder on hands. / ఉదా: జిమ్నాస్ట్ ఆటగాళ్ళు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">52. Motor Vehicles</span>
+                            <span class="pronunciation-telugu">మోటార్ వెహికల్స్ (మోటార్ వాహనాలు)</span>
+                        </div>
+                    </td>
+                    <td>Cars and bikes. Example: Vehicle moving parts oiling. / ఉదా: వాహనాలకు ఆయిల్ రాయడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">53. Thin Layer</span>
+                            <span class="pronunciation-telugu">తిన్ లేయర్ (పలుచని పొర)</span>
+                        </div>
+                    </td>
+                    <td>Lubricant film. Example: Oil film between metal parts. / ఉదా: పలుచని నూనె పొర.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">54. Hinges</span>
+                            <span class="pronunciation-telugu">హింజెస్ (కీళ్ళు)</span>
+                        </div>
+                    </td>
+                    <td>Door joints. Example: Oiling door hinges. / ఉదా: తలుపు కీళ్ళకు నూనె వేయడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">55. Rollers</span>
+                            <span class="pronunciation-telugu">రోలర్స్ (రోలర్లు / చక్రాలు)</span>
+                        </div>
+                    </td>
+                    <td>Cylindrical wheels. Example: Suitcase with rollers. / ఉదా: రోలర్లు ఉన్న సూట్‌కేస్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">56. Rolling Over</span>
+                            <span class="pronunciation-telugu">రోలింగ్ ఓవర్ (దొర్లుట)</span>
+                        </div>
+                    </td>
+                    <td>Rotation motion over surface. Example: Barrel rolling. / ఉదా: డ్రమ్ దొర్లుట.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">57. Fluid Medium</span>
+                            <span class="pronunciation-telugu">ఫ్లూయిడ్ మీడియం (తరల యానకం)</span>
+                        </div>
+                    </td>
+                    <td>Liquid or gas medium. Example: Water or air. / ఉదా: నీరు లేదా గాలి.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">58. Whirls Around</span>
+                            <span class="pronunciation-telugu">విరల్స్ అరౌండ్ (గిరగిరా తిరుగుట)</span>
+                        </div>
+                    </td>
+                    <td>Rotational fluid motion. Example: Stirring water in glass. / ఉదా: గ్లాసులో నీరు తిప్పడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">59. Liquid Layers</span>
+                            <span class="pronunciation-telugu">లిక్విడ్ లేయర్స్ (ద్రవ పొరలు)</span>
+                        </div>
+                    </td>
+                    <td>Layers in flowing liquid. Example: Internal fluid friction. / ఉదా: ద్రవాల పొరల ఘర్షణ.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">60. Aeroplane</span>
+                            <span class="pronunciation-telugu">ఏరోప్లేన్ (విమానం)</span>
+                        </div>
+                    </td>
+                    <td>Flying machine. Example: Jet moving through air. / ఉదా: గాలిలో విమానం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">61. Bird Flight</span>
+                            <span class="pronunciation-telugu">బర్డ్ ఫ్లైట్ (పక్షుల ఎగత)</span>
+                        </div>
+                    </td>
+                    <td>Birds in air. Example: Bird wings overcoming air drag. / ఉదా: గాలిలో పక్షి ఎగరడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">62. Energy Loss</span>
+                            <span class="pronunciation-telugu">ఎనర్జీ లాస్ (శక్తి నష్టం)</span>
+                        </div>
+                    </td>
+                    <td>Wasted energy. Example: Overcoming friction waste. / ఉదా: శక్తి వృథా.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">63. Suitcase Rollers</span>
+                            <span class="pronunciation-telugu">సూట్‌కేస్ రోలర్స్ (సూట్‌కేస్ రోలర్లు)</span>
+                        </div>
+                    </td>
+                    <td>Wheels on luggage. Example: Easy pulling suitcase. / ఉదా: చక్రాల సూట్‌కేస్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">64. Pencil Rollers</span>
+                            <span class="pronunciation-telugu">పెన్సిల్ రోలర్స్ (పెన్సిళ్లపై పుస్తకం)</span>
+                        </div>
+                    </td>
+                    <td>Classic experiment setup. Example: Pushing book on pencils. / ఉదా: పెన్సిళ్లపై పుస్తకం కదిలించడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">65. Lid Rotation</span>
+                            <span class="pronunciation-telugu">లిడ్ రొటేషన్ (మూతల భ్రమణం)</span>
+                        </div>
+                    </td>
+                    <td>Marbles between lids experiment. Example: Ball bearing model. / ఉదా: మూతల మధ్య మార్బుల్స్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">66. Shafts</span>
+                            <span class="pronunciation-telugu">షాఫ్ట్స్ (షాఫ్ట్లు / అక్ష దండాలు)</span>
+                        </div>
+                    </td>
+                    <td>Rotating machine parts. Example: Motor shaft. / ఉదా: మోటార్ షాఫ్ట్.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">67. Up and Down Hand</span>
+                            <span class="pronunciation-telugu">అప్ అండ్ డౌన్ హ్యాండ్ (చేతి నిలువు కదలిక)</span>
+                        </div>
+                    </td>
+                    <td>Hand motion in water. Example: Moving hand with stretched fingers. / ఉదా: చేతిని నిలువుగా కదిలించడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">68. To and Fro Hand</span>
+                            <span class="pronunciation-telugu">టూ అండ్ ఫ్రో హ్యాండ్ (చేతి అడ్డ కదలిక)</span>
+                        </div>
+                    </td>
+                    <td>Hand motion perpendicular. Example: Experiencing more drag. / ఉదా: అడ్డంగా కదిలించడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">69. Speed with Respect to Fluid</span>
+                            <span class="pronunciation-telugu">స్పీడ్ విత్ రెస్పెక్ట్ టు ఫ్లూయిడ్ (సాపేక్ష వేగం)</span>
+                        </div>
+                    </td>
+                    <td>Speed relative to fluid. Example: Fast moving boat drag. / ఉదా: ద్రవంతో పోలిస్తే వేగం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">70. Shape Optimization</span>
+                            <span class="pronunciation-telugu">షేప్ ఆప్టిమైజేషన్ (ఆకార ఆప్టిమైజేషన్)</span>
+                        </div>
+                    </td>
+                    <td>Reducing drag shape. Example: Streamlined body. / ఉదా: ఆకార మార్పు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">71. Biological Evolution</span>
+                            <span class="pronunciation-telugu">బైలాజికల్ ఎవల్యూషన్ (జీవ పరిణామం)</span>
+                        </div>
+                    </td>
+                    <td>Natural body shaping. Example: Bird and fish body shapes. / ఉదా: పక్షులు, చేపల ఆకారాలు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">72. Spiked Cleats</span>
+                            <span class="pronunciation-telugu">స్పైక్డ్ క్లీట్స్ (స్పైక్ క్లీట్స్)</span>
+                        </div>
+                    </td>
+                    <td>Athlete shoes spikes. Example: Running grip. / ఉదా: రన్నర్ బూట్ల ముళ్ళు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">73. Mud Puddle</span>
+                            <span class="pronunciation-telugu">మడ్ పుడిల్ (బురద గుంట)</span>
+                        </div>
+                    </td>
+                    <td>Wet muddy road. Example: Slipping in mud. / ఉదా: బురద రోడ్డు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">74. Ball Bearing Principle</span>
+                            <span class="pronunciation-telugu">బాల్ బేరింగ్ ప్రిన్సిపుల్ (బాల్ బేరింగ్ సూత్రం)</span>
+                        </div>
+                    </td>
+                    <td>Rolling over sliding principle. Example: Reducing friction in motors. / ఉదా: బాల్ బేరింగ్ పనితీరు.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">75. Frictionless World</span>
+                            <span class="pronunciation-telugu">ఫ్రిక్షన్‌లెస్ వరల్డ్ (ఘర్షణ లేని ప్రపంచం)</span>
+                        </div>
+                    </td>
+                    <td>Hypothetical world without friction. Example: Inability to walk or write. / ఉదా: ఘర్షణ లేని ఊహాత్మక ప్రపంచం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">76. Normal Reaction</span>
+                            <span class="pronunciation-telugu">నార్మల్ రియాక్షన్ (లంబ ప్రతిచర్య)</span>
+                        </div>
+                    </td>
+                    <td>Surface support reaction. Example: Book on table. / ఉదా: బల్ల ప్రతిచర్య.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">77. Tractive Force</span>
+                            <span class="pronunciation-telugu">ట్రాక్టివ్ ఫోర్స్ (కర్షణ బలం)</span>
+                        </div>
+                    </td>
+                    <td>Vehicle driving force. Example: Car wheel push. / ఉదా: వాహన చలన బలం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">78. Frictional Heating</span>
+                            <span class="pronunciation-telugu">ఫ్రిక్షనల్ హీటింగ్ (ఘర్షణ ఉష్ణం)</span>
+                        </div>
+                    </td>
+                    <td>Heat from rubbing. Example: Striking matchstick. / ఉదా: అగ్గిపుల్ల వేడెక్కడం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">79. Surface Roughness</span>
+                            <span class="pronunciation-telugu">సర్ఫేస్ రఫ్నెస్ (తల గరుకుదనం)</span>
+                        </div>
+                    </td>
+                    <td>Microscopic peaks. Example: Sandpaper texture. / ఉదా: గరుకైన తలం.</td></tr>
+                <tr>
+                    <td>
+                        <div class="term-container">
+                            <span class="eng-term">80. Self-Lubricating</span>
+                            <span class="pronunciation-telugu">సెల్ఫ్-లూబ్రికేటింగ్ (స్వయంగా కందెన తత్త్వం)</span>
+                        </div>
+                    </td>
+                    <td>Materials needing no oil. Example: Teflon coating. / ఉదా: టెఫ్లాన్ పూత.</td></tr>
+            </table>
+        </div>
+
+        <!-- ================= CHAPTER 2: ALL EXERCISES COMPLETELY SOLVED ================= -->
+        <div id="ch2-all-exercises" class="card friction-card">
+            <h1>Chapter 2: Complete "Improve Your Learning" Exercises & Solutions</h1>
+            
+            <h2>Reflections on Concepts</h2>
+
+            <div class="qa-box">
+                <p class="question">1. Explain the types of friction with suitable examples? (AS1)</p>
+                <p><strong>Answer:</strong> 
+                    1. <strong>Static Friction:</strong> Comes into play when we try to move an object at rest relative to another surface (e.g., initial push on a heavy box).<br>
+                    2. <strong>Sliding Friction:</strong> Comes into play when an object is sliding over another surface (e.g., a book sliding on a floor).<br>
+                    3. <strong>Rolling Friction:</strong> Friction offered when one body rolls over another surface (e.g., suitcase with rollers).<br>
+                    4. <strong>Fluid Friction:</strong> Frictional force exerted by fluids (liquids and gases) on objects moving through them, also called drag (e.g., aeroplanes or birds moving through air).
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> 1. స్థిర ఘర్షణ: వస్తువు కదలడానికి ప్రయత్నించినప్పుడు (ఉదా: బరువైన పెట్టెను నెట్టడం). 2. జారుడు ఘర్షణ: ఒక వస్తువు మరొకదానిపై జారినప్పుడు (ఉదా: నేలపై పుస్తకం జారడం). 3. దొర్లుడు ఘర్షణ: చక్రాలు తిరిగేటప్పుడు (ఉదా: రోలర్ సూట్‌‌కేస్). 4. తరల ఘర్షణ: నీరు లేదా గాలిలో కదిలేటప్పుడు ఏర్పడేది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">2. A book placed on the surface of a table. The book is pushed in one direction. Draw the forces acting on the book and explain. (AS5)</p>
+                <p><strong>Answer:</strong> When a book is pushed on a table, the forces acting on it are: (1) Weight ($W$) acting vertically downwards due to gravity, (2) Normal force ($N$) acting vertically upwards from the table, (3) Push force ($V$) in the horizontal direction, and (4) Frictional force ($f$) acting horizontally opposite to the motion.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> పుస్తకంపై పనిచేసే బలాలు: గురుత్వ బరువు ($W$) కిందకు, లంబ బలం ($N$) పైకి, నెట్టే బలం ($V$) మరియు వ్యతిరేక దిశలో ఘర్షణ బలం ($f$) పనిచేస్తాయి.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">3. Give few examples for Sliding friction. (AS1)</p>
+                <p><strong>Answer:</strong> 
+                    1. A book sliding across a wooden table.<br>
+                    2. A child sliding down a plastic slide in a playground.<br>
+                    3. A drawer sliding out of a cabinet.
+                </p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> 1. బల్లపై పుస్తకం జారడం. 2. జారుడు బండపై (Slide) పిల్లలు జారడం. 3. క్యాబినెట్ నుండి డ్రాయర్ బయటకు లాగడం.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">4. Explain how does lubrication reduces friction. (AS1)</p>
+                <p><strong>Answer:</strong> When lubricants like oil or grease are applied between moving parts of machines, they form a thin layer. This prevents direct contact between surface irregularities, avoiding interlocking and making movement smooth.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> నూనె, గ్రీజు వంటి కందెనలు కదిలే భాగాల మధ్య ఒక పలుచని పొరను ఏర్పరుస్తాయి. దీనివల్ల తలాల గరుకుదనం నేరుగా తాకకుండా అతుక్కోవడం తగ్గి, చలనం నునుపుగా మారుతుంది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">5. Explain with one example that Frictional force is proportional to the Normal force? (AS1)</p>
+                <p><strong>Answer:</strong> When we keep a single brick on the floor and pull it with a spring balance, we note a certain frictional force. When we add another brick on top of it, the normal force (pressing force) doubles, and we observe that the measured frictional force also increases correspondingly, proving friction is proportional to normal force.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> ఒక ఇటుకను నేలపై లాగినప్పుడు వచ్చే ఘర్షణ కంటే, దానిపై మరో ఇటుక పెట్టి లాగినప్పుడు లంబ బలం పెరగడం వల్ల ఘర్షణ కూడా పెరుగుతుంది.</div>
+            </div>
+
+            <h2>Application of Concepts</h2>
+
+            <div class="qa-box">
+                <p class="question">1. Explain why do sportsmen use shoes with spikes? (AS1)</p>
+                <p><strong>Answer:</strong> Sportsmen use shoes with spikes because spikes increase the friction between the shoes and the ground, providing a better grip and preventing athletes from slipping while running or playing.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> ఆటగాళ్ళు ధరించే బూట్లకు ముళ్ళు (Spikes) ఉండటం వల్ల మైదానంతో ఘర్షణ పెరిగి, పరుగెత్తేటప్పుడు జారిపోకుండా మంచి పట్టు లభిస్తుంది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">2. Would it be easier or difficult for you to walk on a marble floor with soapy water. Why? (AS1)</p>
+                <p><strong>Answer:</strong> It would be very difficult because soapy water acts like a lubricant, making the marble floor extremely smooth and drastically reducing friction, causing our feet to slip.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> సాప్ నీరు ఉన్న పాలరాతి నేలపై నడవడం చాలా కష్టం. సాప్ నీరు కందెనలా పనిచేసి ఘర్షణను పూర్తిగా తగ్గిస్తుంది, దాంతో కాలు జారిపోతుంది.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">3. What happens if we do not reduce friction in machines? (AS2)</p>
+                <p><strong>Answer:</strong> If friction is not reduced in machines, it causes excessive wear and tear of moving parts, overheating, wastage of energy, and eventually leads to machine breakdown.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> యంత్రాలలో ఘర్షణను తగ్గించకపోతే భాగాలు త్వరగా అరిగిపోతాయి, అధికంగా వేడెక్కుతాయి, శక్తి వృథా అవుతుంది మరియు యంత్రాలు పాడైపోతాయి.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">4. What purposes are served by using ball bearings in machines? Explain with daily life situations. (AS1)</p>
+                <p><strong>Answer:</strong> Ball bearings convert sliding friction into rolling friction, which is much smaller, thereby reducing energy loss and wear. Daily life example: Used in ceiling fans, bicycle wheels, and motor vehicle axles for smooth rotation.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> బాల్ బేరింగ్లు జారుడు ఘర్షణను దొర్లుడు ఘర్షణగా మారుస్తాయి, తద్వారా ఘర్షణ తగ్గి శక్తి ఆదా అవుతుంది. ఉదాహరణకు: సీలింగ్ ఫ్యాన్లు, సైకిల్ చక్రాలు.</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">5. Draw a free body diagram (FBD) to show various forces acting on a body which is sliding on an inclined plane. (AS5)</p>
+                <p><strong>Answer:</strong> The forces acting on a body sliding down an inclined plane are: (1) Gravitational weight ($W$ acting vertically down), (2) Normal reaction ($N$ perpendicular to the inclined surface), and (3) Frictional force ($f$ acting parallel up the incline opposing the motion).</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> వాలు తలంపై జారే వస్తువుపై పనిచేసే బలాలు: గురుత్వ బరువు ($W$) నిలువుగా క్రిందికి, లంబ ప్రతిచర్య ($N$) తలానికి లంబంగా, మరియు ఘర్షణ బలం ($f$) చలనానికి వ్యతిరేకంగా పనిచేస్తాయి.</div>
+            </div>
+
+            <h2>Higher Order Thinking Questions</h2>
+
+            <div class="qa-box">
+                <p class="question">1. Do you agree with the statement "friction is both good and evil." Explain with examples. (AS1)</p>
+                <p><strong>Answer:</strong> Yes, friction is necessary for walking and writing (good/friend), but it causes wear and tear in machines and wastage of energy (evil/foe).</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> అవును, ఘర్షణ నడవడానికి, రాయడానికి ఎంతో అవసరం (మంచిది); కానీ యంత్రాలలో అరుగుదలకు, శక్తి వృథా కావడానికి కారణమవుతుంది (చెడ్డది).</div>
+            </div>
+
+            <div class="qa-box">
+                <p class="question">2. Reducing friction to the lowest possible level in machine tools solves the problem of energy crisis and conserve biodiversity. How do you support the statement? Explain? (AS1)</p>
+                <p><strong>Answer:</strong> By minimizing friction, energy losses are reduced, saving fuel and electricity (solving energy crisis). This reduces pollution and preserves natural habitats, thereby conserving biodiversity.</p>
+                <div class="telugu-desc"><strong>తెలుగు వివరణ:</strong> ఘర్షణను తగ్గించడం ద్వారా శక్తి వృథా తగ్గి ఇంధనం ఆదా అవుతుంది. ఇది కాలుష్యాన్ని తగ్గించి జీవవైవిధ్యాన్ని (Biodiversity) పరిరక్షించడానికి తోడ్పడుతుంది.</div>
+            </div>
+
+            <h2>Multiple Choice Questions</h2>
+            <p>1. Which material do gymnasts apply on their hands to increase friction for better grip -> <strong>c) Coarse substance</strong></p>
+            <p>2. The relation between the change in the length of spring and the applied force is -> <strong>c) Directly proportional</strong></p>
+            <p>3. The bodies of birds and fishes must have evolved to shapes which would make them not to loose much energy in overcoming -> <strong>d) Fluid friction</strong></p>
+            <p>4. Which of the following friction has self adjusting force -> <strong>Static friction</strong></p>
+        </div>
+
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" title="Scroll to top">↑</button>
+
+    <script>
+        let timerInterval;
+        let secondsElapsed = 0;
+
+        function submitVisitorLogin() {
+            const name = document.getElementById('visitorName').value.trim();
+            const roll = document.getElementById('visitorRoll').value.trim();
+
+            if (!name || !roll) {
+                alert('Please enter both your name and roll number to proceed.');
+                return;
+            }
+
+            // Display info in session bar
+            document.getElementById('showName').textContent = name;
+            document.getElementById('showRoll').textContent = roll;
+
+            // Hide overlay and show main content
+            document.getElementById('visitor-overlay').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+
+            // Log session start and send report to balaswamysm@gmail.com (simulated tracking)
+            console.log(`[Visitor Tracking] Name: ${name}, Roll: ${roll}, Time: ${new Date().toISOString()}`);
+
+            // Start timer
+            timerInterval = setInterval(() => {
+                secondsElapsed++;
+                document.getElementById('timerCounter').textContent = secondsElapsed;
+            }, 1000);
+        }
+
+        // Scroll to Top logic
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
